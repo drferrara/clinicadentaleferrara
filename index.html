@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Dentistico - Circello (BN)</title>
+    <meta name="description" content="Studio dentistico moderno a Circello (BN). Odontoiatria di qualità con tecnologie avanzate e personale altamente qualificato.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dental-blue': '#2563eb',
+                        'dental-light': '#eff6ff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-tooth text-dental-blue text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-gray-900">Studio Dentistico</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-dental-blue font-medium">Home</a>
+                    <a href="#servizi" class="nav-link text-gray-700 hover:text-dental-blue font-medium">Servizi</a>
+                    <a href="#chi-siamo" class="nav-link text-gray-700 hover:text-dental-blue font-medium">Chi Siamo</a>
+                    <a href="#contatti" class="nav-link text-gray-700 hover:text-dental-blue font-medium">Contatti</a>
+                    <a href="tel:+39" class="bg-dental-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>Chiama Ora
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-dental-blue">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-dental-light">Home</a>
+                <a href="#servizi" class="block px-3 py-2 text-gray-700 hover:bg-dental-light">Servizi</a>
+                <a href="#chi-siamo" class="block px-3 py-2 text-gray-700 hover:bg-dental-light">Chi Siamo</a>
+                <a href="#contatti" class="block px-3 py-2 text-gray-700 hover:bg-dental-light">Contatti</a>
+                <a href="tel:+39" class="block px-3 py-2 bg-dental-blue text-white rounded mx-3 text-center">
+                    <i class="fas fa-phone mr-2"></i>Chiama Ora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-dental-light to-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Il Tuo Sorriso è la Nostra
+                    <span class="text-dental-blue">Priorità</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Studio dentistico moderno a Circello (BN) con tecnologie avanzate e personale altamente qualificato. 
+                    La tua salute orale è in ottime mani.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" onclick="openWhatsAppBooking()" class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </a>
+                    <a href="tel:+39" class="border-2 border-dental-blue text-dental-blue px-8 py-3 rounded-lg hover:bg-dental-blue hover:text-white transition-colors font-semibold">
+                        <i class="fas fa-phone mr-2"></i>Chiama Ora
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Location Info -->
+            <div class="mt-16 bg-white rounded-xl shadow-lg p-6 max-w-md mx-auto">
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-map-marker-alt text-dental-blue mr-2"></i>
+                        <span class="font-medium">Circello (BN)</span>
+                    </div>
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-dental-blue mr-2"></i>
+                        <span class="font-medium">Lun-Ven 9-19</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servizi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">I Nostri Servizi</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Offriamo un'ampia gamma di trattamenti odontoiatrici con tecnologie all'avanguardia
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-dental-blue text-3xl mb-4">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Odontoiatria Generale</h3>
+                    <p class="text-gray-600 mb-4">
+                        Visite di controllo, pulizia dentale professionale, otturazioni e prevenzione delle patologie orali.
+                    </p>
+                    <button onclick="openWhatsApp('visita-generale')" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </button>
+                </div>
+                
+                <div class="service-card bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-dental-blue text-3xl mb-4">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Estetica Dentale</h3>
+                    <p class="text-gray-600 mb-4">
+                        Sbiancamento dentale, faccette estetiche e trattamenti per migliorare l'aspetto del tuo sorriso.
+                    </p>
+                    <button onclick="openWhatsApp('estetica')" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </button>
+                </div>
+                
+                <div class="service-card bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-dental-blue text-3xl mb-4">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Implantologia</h3>
+                    <p class="text-gray-600 mb-4">
+                        Impianti dentali di ultima generazione per sostituire i denti mancanti in modo permanente.
+                    </p>
+                    <button onclick="openWhatsApp('implantologia')" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </button>
+                </div>
+                
+                <div class="service-card bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-dental-blue text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Ortodonzia</h3>
+                    <p class="text-gray-600 mb-4">
+                        Apparecchi fissi e mobili per correggere l'allineamento dei denti e migliorare l'occlusione.
+                    </p>
+                    <button onclick="openWhatsApp('ortodonzia')" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </button>
+                </div>
+                
+                <div class="service-card bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-dental-blue text-3xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Parodontologia</h3>
+                    <p class="text-gray-600 mb-4">
+                        Trattamento delle malattie delle gengive e dell'apparato di sostegno dei denti.
+                    </p>
+                    <button onclick="openWhatsApp('parodontologia')" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </button>
+                </div>
+                
+                <div class="service-card bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-dental-blue text-3xl mb-4">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Odontoiatria Pediatrica</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cure dentali specializzate per bambini e adolescenti in un ambiente accogliente e rassicurante.
+                    </p>
+                    <button onclick="openWhatsApp('pediatrica')" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Prenota su WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="chi-siamo" class="py-20 bg-dental-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Chi Siamo</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Il nostro studio dentistico rappresenta l'eccellenza nell'odontoiatria moderna a Circello (BN). 
+                        Con anni di esperienza e formazione continua, ci dedichiamo a fornire cure dentali di altissima qualità.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Utilizziamo le tecnologie più avanzate e seguiamo i più rigorosi protocolli di sicurezza e igiene 
+                        per garantire ai nostri pazienti trattamenti efficaci e confortevoli.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-dental-blue text-xl mr-3"></i>
+                            <span class="text-gray-700 font-medium">Personale altamente qualificato</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-dental-blue text-xl mr-3"></i>
+                            <span class="text-gray-700 font-medium">Tecnologie all'avanguardia</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-dental-blue text-xl mr-3"></i>
+                            <span class="text-gray-700 font-medium">Ambiente accogliente e moderno</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-dental-blue text-xl mr-3"></i>
+                            <span class="text-gray-700 font-medium">Protocolli di sicurezza rigorosi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">La Nostra Missione</h3>
+                    <p class="text-gray-600 mb-4">
+                        Crediamo che un sorriso sano sia la base del benessere generale. Il nostro obiettivo è 
+                        fornire cure personalizzate e di eccellenza, creando un rapporto di fiducia duraturo con ogni paziente.
+                    </p>
+                    <p class="text-gray-600">
+                        Il nostro approccio si basa sulla prevenzione, sull'educazione del paziente e sull'utilizzo 
+                        delle tecniche più moderne e meno invasive possibili.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with WhatsApp -->
+    <section id="contatti" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contattaci e Prenota</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Prenota facilmente tramite WhatsApp o contattaci telefonicamente
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-dental-light rounded-xl p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Informazioni Studio</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-dental-blue text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Indirizzo</h4>
+                                    <p class="text-gray-600">
+                                        Viale San Vito 6<br>
+                                        82030 Circello (BN)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-dental-blue text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Telefono</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+39[IL-TUO-NUMERO]" class="hover:text-dental-blue transition-colors">
+                                            +39 [Il tuo numero]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fab fa-whatsapp text-green-500 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">WhatsApp</h4>
+                                    <p class="text-gray-600">
+                                        <a href="#" onclick="openWhatsAppGeneral()" class="hover:text-green-500 transition-colors">
+                                            +39 [Il tuo numero WhatsApp]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-dental-blue text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600">
+                                        <a href="mailto:info@studiodentisticocircello.it" class="hover:text-dental-blue transition-colors">
+                                            info@studiodentisticocircello.it
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-dental-blue text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Orari di Apertura</h4>
+                                    <div class="text-gray-600 space-y-1">
+                                        <p>Lunedì - Venerdì: 9:00 - 19:00</p>
+                                        <p>Sabato: 9:00 - 13:00</p>
+                                        <p>Domenica: Chiuso</p>
+                                        <p class="text-sm text-dental-blue">*Su appuntamento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Parcheggio Disponibile</h4>
+                        <p class="text-gray-600">
+                            <i class="fas fa-car text-dental-blue mr-2"></i>
+                            Parcheggio gratuito disponibile nelle vicinanze dello studio
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- WhatsApp Booking Section -->
+                <div class="bg-green-50 rounded-xl p-8 border border-green-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                        <i class="fab fa-whatsapp text-green-500 mr-3"></i>
+                        Prenota su WhatsApp
+                    </h3>
+                    
+                    <p class="text-gray-600 mb-6">
+                        Clicca sul servizio che ti interessa per inviare un messaggio WhatsApp predefinito. 
+                        Ti risponderemo il prima possibile per confermare l'appuntamento.
+                    </p>
+                    
+                    <div class="grid gap-3">
+                        <button onclick="openWhatsApp('igiene')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-tooth text-dental-blue mr-3"></i>
+                                <span class="font-medium">Igiene e Pulizia Dentale</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('visita-controllo')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-stethoscope text-dental-blue mr-3"></i>
+                                <span class="font-medium">Visita di Controllo</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('ortodonzia')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-dental-blue mr-3"></i>
+                                <span class="font-medium">Ortodonzia (Apparecchi)</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('estetica')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-smile text-dental-blue mr-3"></i>
+                                <span class="font-medium">Estetica Dentale</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('implantologia')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-md text-dental-blue mr-3"></i>
+                                <span class="font-medium">Implantologia</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('pediatrica')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-baby text-dental-blue mr-3"></i>
+                                <span class="font-medium">Odontoiatria Pediatrica</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('urgenza')" class="flex items-center justify-between bg-red-50 p-4 rounded-lg border border-red-200 hover:border-red-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-exclamation-triangle text-red-500 mr-3"></i>
+                                <span class="font-medium text-red-700">Urgenza Dentale</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                        
+                        <button onclick="openWhatsApp('altro')" class="flex items-center justify-between bg-white p-4 rounded-lg border hover:border-green-300 transition-all hover:shadow-md">
+                            <div class="flex items-center">
+                                <i class="fas fa-comments text-dental-blue mr-3"></i>
+                                <span class="font-medium">Altro / Informazioni Generali</span>
+                            </div>
+                            <i class="fab fa-whatsapp text-green-500"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-green-100 rounded-lg border border-green-200">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-green-600 mt-1 mr-3"></i>
+                            <div class="text-green-800 text-sm">
+                                <p class="font-medium">Come funziona:</p>
+                                <p class="mt-1">Cliccando su un servizio si aprirà WhatsApp con un messaggio già pronto. Ti basterà inviarlo e risponderemo con le disponibilità per l'appuntamento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tooth text-dental-blue text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">Studio Dentistico</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Il tuo sorriso è la nostra priorità. Odontoiatria moderna e di qualità a Circello (BN).
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contatti</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Viale San Vito 6, 82030 Circello (BN)</p>
+                        <p><i class="fas fa-phone mr-2"></i>+39 [Il tuo numero]</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@studiodentisticocircello.it</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Orari</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Lunedì - Venerdì: 9:00 - 19:00</p>
+                        <p>Sabato: 9:00 - 13:00</p>
+                        <p>Domenica: Chiuso</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Studio Dentistico Circello. Tutti i diritti riservati.</p>
+                <p class="text-sm mt-2">
+                    Questo sito utilizza solo cookie tecnici necessari per il funzionamento. Non vengono utilizzati cookie di profilazione.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
