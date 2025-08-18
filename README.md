@@ -44,7 +44,7 @@ Sito web moderno e professionale per studio dentistico con **sistema di prenotaz
 2. ✅ **File già caricati** 
 3. 🔧 **Attiva GitHub Pages**: Settings → Pages → Source: "main branch"
 4. 📱 **Configura WhatsApp** nel file `script.js`
-5. 🌐 **Sito online**: https://drferrara.github.io/clinichedentis-website
+5. 🌐 **Sito online**: https://[il-tuo-username].github.io/clinica-dentale-ferrara
 
 ### **Per Altri Hosting:**
 1. **Upload file** su qualsiasi hosting web
@@ -79,7 +79,7 @@ Sito web moderno e professionale per studio dentistico con **sistema di prenotaz
 ---
 
 ## 📞 **Supporto:**
-- **Repository**: https://github.com/drferrara/clinichedentis-website
+- **Repository**: https://github.com/[il-tuo-username]/clinica-dentale-ferrara
 - **Tecnologie**: HTML5, CSS3, JavaScript, Tailwind CSS, FontAwesome
 - **Browser supportati**: Tutti i browser moderni
 
