@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // WhatsApp functionality - opens WhatsApp with pre-defined message
 function openWhatsApp(serviceType) {
-    // IMPORTANTE: Sostituire con il tuo numero WhatsApp (formato internazionale, senza + e senza spazi)
-    const phoneNumber = '39XXXXXXXXXX'; // Sostituire con il tuo numero, es: '393881234567'
+    // ⚠️ CONFIGURAZIONE OBBLIGATORIA: Sostituisci con il tuo numero WhatsApp
+    const phoneNumber = '393881234567'; // Esempio: il tuo numero +39 388 1234567 diventa 393881234567
     
     const messages = {
         'igiene': `Ciao! Vorrei prenotare una seduta di igiene e pulizia dentale presso il vostro studio a Circello.
