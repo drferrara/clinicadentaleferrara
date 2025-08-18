@@ -31,8 +31,14 @@
 - `index.html` - Sito completo
 - `style.css` - Stili personalizzati
 - `script.js` - Funzionalità WhatsApp (⚠️ **DA CONFIGURARE**)
+- `logo.png` - Logo clinica (📁 **DA AGGIUNGERE**)
 
 ## 🔧 Personalizzazioni Rapide
+
+**Logo Clinica** (CONSIGLIATO):
+- Carica il tuo logo come `logo.png` nella root della repository
+- Dimensioni ottimali: PNG con sfondo trasparente
+- Il logo si adatta automaticamente alla navbar
 
 **Numero WhatsApp** (OBBLIGATORIO):
 ```javascript
