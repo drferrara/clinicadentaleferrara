@@ -3,9 +3,9 @@ module.exports = {
     name: 'clinica-dentale-ferrara',
     script: 'python3',
     args: ['-m', 'http.server', '8080'],
-    cwd: '/home/user/webapp',
+    cwd: process.cwd(),
     env: {
-      NODE_ENV: 'development'
+      NODE_ENV: 'production'
     }
   }]
 };
