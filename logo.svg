@@ -1,0 +1,15 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="80" rx="8" fill="#2563eb"/>
+  
+  <!-- Tooth icon -->
+  <g transform="translate(20, 20)">
+    <path d="M20 5C15 5 12 8 12 13C12 18 15 25 20 35C25 25 28 18 28 13C28 8 25 5 20 5Z" fill="white"/>
+    <path d="M20 35C18 33 16 30 15 27C14 24 13 20 13 17C13 15 14 13 16 12C17 11 18 11 20 11C22 11 23 11 24 12C26 13 27 15 27 17C27 20 26 24 25 27C24 30 22 33 20 35Z" fill="#2563eb"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">CLINICA</text>
+  <text x="60" y="48" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">DENTALE</text>
+  <text x="60" y="62" font-family="Arial, sans-serif" font-size="12" fill="#e5e7eb">FERRARA</text>
+</svg>
