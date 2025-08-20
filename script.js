@@ -125,6 +125,12 @@ function openWhatsApp(serviceType) {
     const phoneNumber = '393881234567'; // Esempio: il tuo numero +39 388 1234567 diventa 393881234567
     
     const messages = {
+        'prima-visita': `Salve! Vorrei prenotare una prima visita presso il vostro studio dentistico a Circello.
+
+Potreste comunicarmi le vostre disponibilità per una prima consulenza?
+
+Cordiali saluti`,
+
         'igiene': `Ciao! Vorrei prenotare una seduta di igiene e pulizia dentale presso il vostro studio a Circello.
 
 Potreste comunicarmi le vostre disponibilità?
